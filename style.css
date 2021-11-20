@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --softblue-primary-color: hsl(215, 51%, 70%);
+    --cyan-primary-color: hsl(178, 100%, 50%);
+    --dark-blue-main-bg: hsl(215, 51%, 20%);
+    --dark-blue-card-bg: hsl(216, 50%, 16%);
+    --dark-blue-line: hsl(215, 32%, 27%);
+    --white-color: hsl(0, 0%, 100%);
+    --font-zize: 18px;
+    --font-weight-300: 300;
+    --font-weight-400: 400;
+    --font-weight-600: 600;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--dark-blue-main-bg);
+}
+
+.card {
+    background-color: var(--dark-blue-card-bg);
+    width: 45rem;
+    height: 50rem;
+    padding: 2rem; 
+}
+.card__image {
+    border-radius: 10px;
+    width: 15rem;
+    height: 15rem;
+}
+.card__body {
+    line-height: 3rem;
+}
+.card__body__title {
+    color: var(--white-color)
+}
+.card__body__title p {
+    font-size: var(--font-zize);
+    font-weight: var(--font-weight-600);
+}
+
+.card__body__content {
+    color: var(--softblue-primary-color);
+    font-size: var(--font-zize);
+}
+
+.card__body__detail {
+    display: flex;
+    justify-content: space-between;
+}
+.card__body__detail--ethereum {
+    display: flex;
+}
+.card__body__detail--ethereum img {
+    height: 20px;
+    width: 15px;
+}
+.card__body__detail--ethereum--price{
+    color: var(--cyan-primary-color);
+    font-weight: var(--font-weight-400);
+}
+.card__body__detail--period {
+    color: var(--softblue-primary-color);
+    font-weight: var(--font-weight-300);
+}
